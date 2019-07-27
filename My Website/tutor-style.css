@@ -1,0 +1,38 @@
+h3 {
+  padding-top: 20px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.imgs {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.tutor-imgs {
+  width: 25%;
+  height: 25%;
+  padding: 20px;
+}
+.tutoranim {
+  margin-left: 435px;
+  animation: 
+    tutorTypewriter 2s steps(8) 1s 1 normal both,
+    blinkCursor 1s steps(8) 3 normal;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+}
+
+@keyframes tutorTypewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 4.8em;
+  }
+}

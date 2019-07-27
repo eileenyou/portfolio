@@ -1,0 +1,34 @@
+h3 {
+  padding-top: 20px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.imgs {
+  width: 45%;
+  height: 45%;
+  padding: 20px;
+}
+
+.pranim {
+  margin-left: 281px;
+  animation: 
+    prTypewriter 2s steps(11) 1s 1 normal both,
+    blinkCursor 1s steps(11) 3 normal;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+}
+
+
+@keyframes prTypewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 7em;
+  }
+}

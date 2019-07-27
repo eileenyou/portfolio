@@ -1,0 +1,139 @@
+/* css that is shared across pages */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap');
+
+@font-face {
+  font-family: 'Harman Retro';
+  src: url('fonts/Harman-Retro-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harman Sans';
+  src: url('fonts/Harman-Sans-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harman Simple';
+  src: url('fonts/Harman-Simple-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Harman Retro';
+}
+h3 {
+  font-family: 'Harman Sans';
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+header {
+  height: 100px;
+  width: 80%;
+  padding: 300px 0px 250px 0px;
+  display: flex;
+}
+
+nav { 
+  width: 100px;
+  position: fixed;
+  right: 150px;
+  padding-right: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  color: gray;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:active {
+  color: black;
+}
+
+.intro {
+  width: 600px;
+  height: 80px;
+  margin-top: 10px;
+  font-family: Harman Retro;
+  font-size: 70px;
+}
+
+.nav-bar {
+  height: 70px;
+  padding-left: 15px;
+  font-family: Harman Simple;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* containers wrapping entire project information */
+.info-wrap{
+  width:600px;
+  margin-right: 300px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info {
+  margin-right: 300px;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photos {
+  width: 800px;
+  margin-right: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+
+
+/* animations */
+@keyframes fadein {
+     0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right-color: black;
+  }
+  1% {
+    border-right-color: white;
+  }
+}

@@ -1,0 +1,43 @@
+h3 {
+  padding-top: 20px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.adj {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.imgs {
+  width: 45%;
+  height: 45%;
+  padding: 20px
+  margin-right: 40px;
+}
+
+.hub-imgs {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.hubanim {
+  margin-left: 295px;
+  animation: 
+    hubTypewriter 2s steps(12) 1s 1 normal both,
+    blinkCursor 1s steps(12) 3 normal;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+}
+
+@keyframes hubTypewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 6.8em;
+  }
+}
